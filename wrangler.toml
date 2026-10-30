@@ -1,4 +1,23 @@
-name = "vless2sub-worker"
+name = "yg-sub-worker"
 main = "_worker.js"
 compatibility_date = "2025-09-07"
 keep_vars = true
+
+[vars]
+# 快速订阅入口路径 /auto
+TOKEN = "auto"
+# VLESS 服务端伪装域名（部署好后端后改这里）
+HOST = "vless-edge-worker.singapore1.workers.dev"
+# 订阅内置 VLESS 节点 UUID
+UUID = "c22d869c-3a2d-484f-9546-8126c5bd3144"
+# WS 路径
+PATH = "/?ed=2560"
+# 优选 IP 地址源
+ADDAPI = "https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesapi.txt,https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressesipv6api.txt"
+# iptest 测速 CSV 优选
+ADDCSV = "https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv"
+DLS = "5"
+# 订阅转换后端与配置
+SUBAPI = "subapi.cmliussss.net"
+SUBCONFIG = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"
+SUBNAME = "YG-优选订阅"
